@@ -259,7 +259,7 @@ SocietyDetailsEntity soc=(SocietyDetailsEntity)session.getAttribute("societydeta
 									{
 										PostEntity pe = itr.next();
 										
-										 if(pe.name.equals(user.name)){
+										 if(pe.email.equals(user.email)){
 										%>
 										
 							<div class="entry clearfix`center" style="padding: 10px;border: 1px solid #dcd8d8; box-sizing: border-box;">
