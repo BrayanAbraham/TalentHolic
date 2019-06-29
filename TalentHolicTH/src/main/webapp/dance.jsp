@@ -319,7 +319,8 @@ SocietyDetailsEntity soc=(SocietyDetailsEntity)session.getAttribute("societydeta
 								%>
 								
 								<div class="entry-title center"><% if((user!=null)||soc!=null){%>
-									<a href="like?id=<%=pe.id%>&url=dance.jsp"><i class="icon-arrow-up icons"></i><%=le.like %></a>&nbsp;/&nbsp;<a href="dislike?id=<%=pe.id%>&url=dance.jsp"><i class="icon-arrow-down icons"></i><%=le.dislike %></a>&nbsp;/&nbsp;<%} %><a href="#"><i class="icon-folder-open"></i><%=pe.category %></a>&nbsp;/&nbsp;<a href="#"><i class="icon-comments"></i>Comment</a><%if((user!=null)||(soc!=null)){if((user.email.equals(pe.email))||(soc.email.equals(pe.email))||(user.auth==3)){ %>&nbsp;/&nbsp;<a href="delete?id=<%=pe.id%>&url=/profile.jsp"><i class="icon-close"></i>Delete</a><%} }%>
+									<a href="like?id=<%=pe.id%>&url=dance.jsp">
+										<i class="icon-arrow-up icons"></i><%=le.like %></a>&nbsp;/&nbsp;<a href="dislike?id=<%=pe.id%>&url=dance.jsp"><i class="icon-arrow-down icons"></i><%=le.dislike %></a>&nbsp;/&nbsp;<%} %><a href="#"><i class="icon-folder-open"></i><%=pe.category %></a>&nbsp;/&nbsp;<a href="#"><i class="icon-comments"></i>Comment</a><!--  <%if((user!=null)||(soc!=null)){/*if((user.email.equals(pe.email))||(soc.email.equals(pe.email))){ %>&nbsp;/&nbsp;<a href="delete?id=<%=pe.id%>&url=/profile.jsp"><i class="icon-close"></i>Delete</a><%}*/ }%>-->
 								</div>
 								<%} }%>
 								<%if((user!=null)||soc!=null){ %>
